@@ -19,6 +19,19 @@ class TodoController extends Controller
 
         return response()->json($todo);
     }
+
+    /**
+     * ToDo一覧.
+     *
+     * @param Request $request
+     * @return void
+     */
+    public function index(Request $request) {
+        $todo = Todo::all();
+
+        return response()->json($todo);
+    }
+
     /**
      * ToDo取得.
      *

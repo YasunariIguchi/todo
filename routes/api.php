@@ -23,3 +23,4 @@ Route::post('todo', [TodoController::class, 'create']);
 Route::get('todo', [TodoController::class, 'fetch']);
 Route::put('todo', [TodoController::class, 'update']);
 Route::delete('todo', [TodoController::class, 'delete']);
+Route::get('todo-index', [TodoController::class, 'index']);
